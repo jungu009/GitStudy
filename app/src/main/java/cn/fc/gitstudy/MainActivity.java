@@ -19,9 +19,21 @@ public class MainActivity extends AppCompatActivity {
                 feature1(v);
             }
         });
+
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                feature2(v);
+            }
+        });
     }
 
     public void feature1(View view){
         Toast.makeText(this, "功能1", Toast.LENGTH_SHORT).show();
     }
+
+    public void feature2(View view){
+        Toast.makeText(this, "功能2", Toast.LENGTH_SHORT).show();
+    }
+
 }
