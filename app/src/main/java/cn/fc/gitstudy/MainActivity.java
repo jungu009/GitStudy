@@ -36,4 +36,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "功能2", Toast.LENGTH_SHORT).show();
     }
 
+    public void feature5(View view){
+        Toast.makeText(this, "功能5", Toast.LENGTH_SHORT).show();
+    }
+
 }
