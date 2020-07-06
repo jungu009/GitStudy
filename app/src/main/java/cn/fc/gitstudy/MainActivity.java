@@ -36,6 +36,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void fun4(View v) {
         Toast.makeText(this, "我是功能4", Toast.LENGTH_SHORT).show();
+
+        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                feature3(v);
+            }
+        });
+
+        findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                feature5(v);
+            }
+        });
     }
 
     public void feature1(View view){
@@ -44,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void feature2(View view){
         Toast.makeText(this, "功能2", Toast.LENGTH_SHORT).show();
+    }
+
+    public void feature3(View view) {
+        Toast.makeText(this, "功能3", Toast.LENGTH_SHORT).show();
+    }
+    public void feature5(View view){
+        Toast.makeText(this, "功能5", Toast.LENGTH_SHORT).show();
     }
 
 }
