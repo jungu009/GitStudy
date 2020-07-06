@@ -26,6 +26,20 @@ public class MainActivity extends AppCompatActivity {
                 feature2(v);
             }
         });
+
+        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                feature3(v);
+            }
+        });
+
+        findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                feature5(v);
+            }
+        });
     }
 
     public void feature1(View view){
